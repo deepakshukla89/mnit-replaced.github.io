@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" media="screen and (max-width: 1244px)" href="./css/indexphone.css">
     <title>MNIT JAIPUR</title>
@@ -35,8 +36,8 @@
                     <span class="color-change">हिन्दी</span>
                 </a></li>
             <li class="nav-top">
-                <a class="color-change bold" href="#">A-</a>
-                <a class="color-change bold large" href="#">A+</a>
+                <a class="color-change bold" onclick="decrAllFontSize();" style="cursor:pointer;">A-</a>
+                <a class="color-change bold large" onclick="incrAllFontSize();" style="cursor:pointer;">A+</a>
             </li>
         </ul>
         <ul class="top-top third-con">
@@ -74,7 +75,7 @@
     <nav class="drawer-menu">
         <ul class="menu-nav-bar">
             <li class="menu-li"><a href="#">Home</a></li>
-            <li class="menu-li"><span class="menu-over-hover department span-hover">
+            <li class="menu-li selected" onmouseover="showDropContent();"><span class="menu-over-hover department span-hover">
                     Departments
                     <div class="depart-part">
                         <div class="depart-sec1">

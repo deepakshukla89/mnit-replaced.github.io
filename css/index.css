@@ -32,6 +32,7 @@ ul {
     padding: 0 5%;
     height: 44px;
     background-color: #BF1964;
+    overflow-y: hidden;
 }
 
 
@@ -68,6 +69,7 @@ nav ul li a{
 }
 .menu-btn{
     display: none;
+    overflow-y: hidden;
 }
 
 .search-icon{
@@ -81,6 +83,12 @@ nav ul li a{
 .menu-li{
     margin: 32px 10px;
     font-size: 18px;
+    overflow-y: hidden;
+    border-radius: 3px;
+}
+
+.menu-li a{
+    transition: all 0.5s ease;
 }
 
 .mnit-logo{
@@ -124,6 +132,7 @@ nav ul li a{
 
 .menu-li a:hover{
     background-color: #CC0E74;
+    padding: 5px;
     color: white;
 }
 
@@ -244,14 +253,18 @@ nav ul li a{
     font-size: 20px;
     text-align: center;
     justify-content: center;
+    transition: transform 450ms;
   
 }
 .phone-five-cards{
     display: flex;
     flex-direction: row;
+    overflow-y: hidden;
+    border-radius: 5px;
 }
 .five-card:hover {
    box-shadow: none;
+   transform: scale(1.08);
 }
 .five-card1{
     background-color: #E11D74;
@@ -865,6 +878,10 @@ color: #E11D74;
     
     .drawer-menu li {
         text-align: center;
+    }
+
+    .drawer-menu .department li a{
+        background: #fff;
     }
     
     .drawer-menu li a {

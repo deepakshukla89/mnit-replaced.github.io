@@ -52,3 +52,55 @@ var next = 1;
             }
             slides[next - 1].style.display = "block";
         }
+
+function incrAllFontSize(){
+  $("*").each(function(index, elem){
+    var $this = $(this);//caching for perf. opt.
+
+    var curr = $this.css("fontSize");//get the fontSize string
+    if(curr != "" && curr != undefined){//check if it exist
+      curr = curr.replace(/px$/, "");//get rid of "px" in the string
+
+      var float_curr = parseFloat(curr);//convert string to float
+      float_curr += 1;//actual incr
+
+      var new_val = "" + float_curr + "px";//back to string
+      $this.css("fontSize", new_val);//set the fontSize string
+    }
+  });
+}
+
+function decrAllFontSize(){
+  $("*").each(function(index, elem){
+    var $this = $(this);//caching for perf. opt.
+
+    var curr = $this.css("fontSize");//get the fontSize string
+    if(curr != "" && curr != undefined){//check if it exist
+      curr = curr.replace(/px$/, "");//get rid of "px" in the string
+
+      var float_curr = parseFloat(curr);//convert string to float
+      float_curr -= 1;//actual decr
+
+      var new_val = "" + float_curr + "px";//back to string
+      $this.css("fontSize", new_val);//set the fontSize string
+    }
+  });
+}
+
+function showDropContent(){
+    debugger;
+    const hoverStyle = {
+    backgroundColor: "white",
+    marginTop: "10px",
+    position: "absolute",
+    top: "223px",
+    display: "flex",
+    fontSize: "1rem",
+    width: "50%",
+    padding: "10px 0",
+    borderRadius: "0px 15px 15px 15px",
+    boxShadow: "0px 4.5px 7.5px -1.5px rgba(0, 0, 0, 0.25)",
+    zIndex: 1
+  };
+    $(this).find(".depart-part").css({"display":"flex"});
+}
