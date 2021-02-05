@@ -1,0 +1,254 @@
+#five-cd{
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    top: 30px;
+}
+.five-cards {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.phone-five-cards{
+    display: flex;
+    flex-direction: column;
+}
+#phone-none{
+    display: none;
+}
+.five-card {
+    width: 150px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 0px 0px 20px .5px black;
+    
+}
+.five-card a{
+   font-size: 17px;
+    
+}
+.five-card:hover {
+   box-shadow: none;
+}
+
+/* four tab */
+
+.for-all-tab{
+    margin: 0px;
+    padding: 0px;
+
+}
+.big-cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.big-part1{
+    display: flex;
+    flex-direction: column;
+}
+
+.big-part2{
+    display: flex;
+    flex-direction: column;
+}
+
+h3{
+    color: #E11D74;
+    font-size: 1.5em;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.crd-sty{
+    height: auto; 
+    width: 75vw;
+    background: #FFFFFF;
+    margin: 40px;
+    box-shadow: 0px 0px 47.25px -18px rgba(0, 0, 0, 0.15);
+    border-radius: 33.75px;
+    padding: 30px;
+    padding-bottom: 50px;
+}
+
+.pin-card-tab{
+    display: flex;
+    flex-direction: column;
+}
+.pin-content{
+    display: flex;
+    flex-direction: row;
+}
+.pin-icon {
+    width: 50px;
+    padding: 10px;
+    position: relative;
+}
+.hr-tag{
+    height: 1px;
+    background-color: #f3338c;
+    margin: 40px 0;
+}
+
+h6{
+    color: #959595;
+    margin-top: 24px;
+    margin-bottom: 0;
+}
+
+.many-tabs{
+    display: none;
+}
+
+.bottom-card{
+    display: flex;
+    justify-content: space-between;
+}
+
+.view-more{
+    cursor: pointer;
+}
+
+.info-tab{
+    margin: 0 13px;
+    cursor: pointer;
+}
+
+
+
+/* Acchivement section  */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+.achivement{
+    margin: 0px;
+    padding: 0px;
+    align-items: center;
+}
+.achievements{
+    margin: 4%;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 47.25px -18px rgba(0, 0, 0, 0.15);
+    border-radius: 33.75px;
+}
+.achivement-all-cover{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.nirf-rank{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    padding-top: 50px;
+}
+#achivement-heading{
+    position: relative;
+    top: 40px;
+    left: 45px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: bold;
+font-size: 30px;
+line-height: 131.5%;
+color: #E11D74;
+}
+.para-width{
+    text-align: center;
+    width: 85vw;
+    text-align: justify;
+  text-justify: inter-word;
+}
+.margin-padding {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+.margin-padding img {
+    width: 63.75px;
+    height: 38.25px;
+}
+.margin-padding p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    padding: 0px 10px;  
+    color: #383779; 
+}
+
+.settle-rank{
+    display: flex;
+    align-items: center;
+}
+.color-blue{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.rank-text{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0px 10px;
+    letter-spacing: 0.085em;
+    color: #36454F;
+
+}
+
+.num-rank{
+    margin:0px 15px;
+    color: #E11D74;
+    border: 3px solid #E11D74;
+    border-radius: 9px;
+    padding: 10px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32.6912px;
+}
+
+
+.contain-achieve{
+    margin: 2%;
+}
+.achieve1{
+    width: 33%;
+}
+
+.achieve-tag-img{
+    display: none;
+}
+
+.achieve-image{
+    width: 90vw;
+    height: auto;
+    border-radius: 16px;
+}
+
+.campus-img-bar{
+    display: none;
+}
+
+
+.nirf-img{
+    width: 38px;
+    height: 22px;
+    margin:0px 15px;
+}
+
