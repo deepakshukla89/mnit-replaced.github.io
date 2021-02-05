@@ -20,19 +20,19 @@ tabs.forEach(tab => {
 const peoples = document.querySelectorAll('[data-people-target]')
 const peopleContents = document.querySelectorAll('[data-people-content]')
 
-peoples.forEach(people => {
-  people.addEventListener('click', () => {
-    const target = document.querySelector(people.dataset.peopleTarget)
-    peopleContents.forEach(peopleContent => {
-      peopleContent.classList.remove('active')
-    })
-    peoples.forEach(people => {
-      people.classList.remove('active')
-    })
-    people.classList.add('active')
-    target.classList.add('active')
-  })
-})
+// peoples.forEach(people => {
+//   people.addEventListener('click', () => {
+//     const target = document.querySelector(people.dataset.peopleTarget)
+//     peopleContents.forEach(peopleContent => {
+//       peopleContent.classList.remove('active')
+//     })
+//     peoples.forEach(people => {
+//       people.classList.remove('active')
+//     })
+//     people.classList.add('active')
+//     target.classList.add('active')
+//   })
+// })
 
 (function($){
   'use strict';
