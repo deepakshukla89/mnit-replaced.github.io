@@ -87,20 +87,18 @@ function decrAllFontSize(){
   });
 }
 
-function showDropContent(){
-    debugger;
-    const hoverStyle = {
-    backgroundColor: "white",
-    marginTop: "10px",
-    position: "absolute",
-    top: "223px",
-    display: "flex",
-    fontSize: "1rem",
-    width: "50%",
-    padding: "10px 0",
-    borderRadius: "0px 15px 15px 15px",
-    boxShadow: "0px 4.5px 7.5px -1.5px rgba(0, 0, 0, 0.25)",
-    zIndex: 1
-  };
-    $(this).find(".depart-part").css({"display":"flex"});
+function showDepartmentContent(elem){
+    // var checked = $("#checked").prop("checked");
+    // if(checked){
+    //     $(elem).siblings().hide();
+    //     $(elem).find("div").first().css({
+    //         WebkitTransitionDelay: ".3s",
+    //       transitionDelay: ".3s",
+    //       WebkitTransform: "none",
+    //       msTransform: "none",
+    //       transform: "none",
+    //       opacity: 1,
+    //       zIndex: 2
+    //     })
+    // }
 }

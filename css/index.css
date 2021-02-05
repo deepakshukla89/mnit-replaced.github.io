@@ -132,7 +132,7 @@ nav ul li a{
 
 .menu-li a:hover{
     background-color: #CC0E74;
-    padding: 5px;
+    padding: 10px;
     color: white;
 }
 
@@ -156,9 +156,9 @@ nav ul li a{
     display: none;
 }
 
-.department:hover .depart-part{
+.selected:hover .depart-part{
     background-color: white;
-    margin-top: 10px;
+    margin-top: 12px;
     position: absolute;
     top: 223px;
     display: flex;
@@ -852,6 +852,11 @@ color: #E11D74;
     .menu-nav-bar{
         display: block;
     }
+
+    .selected:hover .depart-part{
+        display: none;
+    }
+
     /* drawer menu */
     .drawer-menu {
         box-sizing: border-box;
@@ -880,8 +885,12 @@ color: #E11D74;
         text-align: center;
     }
 
-    .drawer-menu .department li a{
+    .drawer-menu .selected a{
+        line-height: 50px;
+        text-align: center;
+        color: black;
         background: #fff;
+        height: 50px;
     }
     
     .drawer-menu li a {
@@ -989,7 +998,7 @@ color: #E11D74;
     
     .check:checked ~ .menu-btn .bar.bottom {
         width: 56px;
-        top: 40px;
+        top: 28px;
         -webkit-transform: rotate(-45deg);
         -ms-transform: rotate(-45deg);
         transform: rotate(-45deg);
@@ -1004,10 +1013,6 @@ color: #E11D74;
         visibility: visible;
         opacity: 1;
         z-index: 3;
-    }
-
-    .department:hover .depart-part{
-        display: none;
     }
 
     /* .slideshow{
