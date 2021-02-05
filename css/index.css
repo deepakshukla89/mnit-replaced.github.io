@@ -32,6 +32,7 @@ ul {
     padding: 0 5%;
     height: 44px;
     background-color: #BF1964;
+    overflow-y: hidden;
 }
 
 
@@ -68,6 +69,7 @@ nav ul li a{
 }
 .menu-btn{
     display: none;
+    overflow-y: hidden;
 }
 
 .search-icon{
@@ -81,6 +83,12 @@ nav ul li a{
 .menu-li{
     margin: 32px 10px;
     font-size: 18px;
+    overflow-y: hidden;
+    border-radius: 3px;
+}
+
+.menu-li a{
+    transition: all 0.5s ease;
 }
 
 .mnit-logo{
@@ -124,6 +132,7 @@ nav ul li a{
 
 .menu-li a:hover{
     background-color: #CC0E74;
+    padding: 10px;
     color: white;
 }
 
@@ -147,9 +156,9 @@ nav ul li a{
     display: none;
 }
 
-.department:hover .depart-part{
+.selected:hover .depart-part{
     background-color: white;
-    margin-top: 10px;
+    margin-top: 12px;
     position: absolute;
     top: 223px;
     display: flex;
@@ -244,14 +253,18 @@ nav ul li a{
     font-size: 20px;
     text-align: center;
     justify-content: center;
+    transition: transform 450ms;
   
 }
 .phone-five-cards{
     display: flex;
     flex-direction: row;
+    overflow-y: hidden;
+    border-radius: 5px;
 }
 .five-card:hover {
    box-shadow: none;
+   transform: scale(1.08);
 }
 .five-card1{
     background-color: #E11D74;
@@ -839,6 +852,11 @@ color: #E11D74;
     .menu-nav-bar{
         display: block;
     }
+
+    .selected:hover .depart-part{
+        display: none;
+    }
+
     /* drawer menu */
     .drawer-menu {
         box-sizing: border-box;
@@ -865,6 +883,14 @@ color: #E11D74;
     
     .drawer-menu li {
         text-align: center;
+    }
+
+    .drawer-menu .selected a{
+        line-height: 50px;
+        text-align: center;
+        color: black;
+        background: #fff;
+        height: 50px;
     }
     
     .drawer-menu li a {
@@ -972,7 +998,7 @@ color: #E11D74;
     
     .check:checked ~ .menu-btn .bar.bottom {
         width: 56px;
-        top: 40px;
+        top: 28px;
         -webkit-transform: rotate(-45deg);
         -ms-transform: rotate(-45deg);
         transform: rotate(-45deg);
@@ -987,10 +1013,6 @@ color: #E11D74;
         visibility: visible;
         opacity: 1;
         z-index: 3;
-    }
-
-    .department:hover .depart-part{
-        display: none;
     }
 
     /* .slideshow{
