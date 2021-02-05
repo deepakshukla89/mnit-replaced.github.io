@@ -28,11 +28,7 @@
 
 <body>
 
-    <div class="pre-loader">
-      <div class="sk-fading-circle">
-        <img src="./Images/Wedges-3s-217px.svg" class="sk-fading-circle">
-      </div>
-    </div>
+    <div id="loading"></div>
 
     <nav class="topbar">
         <ul class="top-top one-con">
@@ -549,7 +545,19 @@
             </div>
         </div>
     </footer>
+<script>
+		// $(document).ready(function(){
+			// 	$('div#loading').removeAttr('id');
+		// });
+		var preloader = document.getElementById("loading");
+		// window.addEventListener('load', function(){
+		// 	preloader.style.display = 'none';
+		// 	})
 
+		function myFunction(){
+			preloader.style.display = 'none';
+		};
+	</script>
     <script src="./js/index.js"></script>
 </body>
 
