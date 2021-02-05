@@ -1027,3 +1027,22 @@ color: #E11D74;
         top: 35vh;
     }
 }
+
+.pre-loader {
+    background-color: rgb(241, 242, 243);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+}
+
+.sk-fading-circle {
+    top:42%;
+    margin: auto;
+    width: 80px;
+    height: auto;
+    position: relative;
+    overflow-y: hidden;
+}
