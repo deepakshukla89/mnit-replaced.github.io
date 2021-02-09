@@ -1,4 +1,5 @@
 .icon-bar {
+    z-index: 9999;
     position: fixed;
     top: 78%;
     -webkit-transform: translateY(-50%);
