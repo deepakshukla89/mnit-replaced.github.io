@@ -112,3 +112,116 @@ function showDepartmentContent(elem){
 //         }
 //     });
 // })(jQuery)
+
+
+window.addEventListener("scroll", function(){
+  var x = window.matchMedia("(min-width: 1190px)")
+  if(x.matches){
+    if(window.scrollY>177){
+      $(".drawer-menu").css({
+        "position":"fixed",
+        "z-index":9999,
+        "width": "100%",
+        "top":0,
+        "background-color":"white",
+        "box-shadow": "0px 4.5px 7.5px -1.5px rgba(0, 0, 0, 0.25)",
+      });
+      $(".body-content").css({
+        "margin-top":"100px",
+      })
+      $(".depart-part").css({
+        "top":"47px",
+        "position": "fixed",
+      });
+     }
+    else{
+      $(".drawer-menu").css({
+        "position":"static",
+        "z-index":1,
+        "width": "auto",
+        "background-color":"white",
+        "box-shadow": "none",
+      });
+      $(".body-content").css({
+        "margin-top":"0",
+      })
+      $(".depart-part").css({
+        "top":"223px",
+        "position": "absolute",
+      });
+    }
+  }
+  else{
+      $(".drawer-menu").css({
+        "position":"fixed",
+        "z-index":1,
+        "width": "300px",
+        "top":0,
+        "background-color":"rgb(0,0,0)",
+        "box-shadow": "none",
+      });
+      $(".body-content").css({
+        "margin-top":"0",
+      })
+      $(".depart-part").css({
+        "top":"223px",
+        "position": "absolute",
+      });
+  }
+});
+
+window.addEventListener("resize", function(){
+  var x = window.matchMedia("(min-width: 1190px)")
+  if(x.matches){
+    if(window.scrollY>177){
+      $(".drawer-menu").css({
+        "position":"fixed",
+        "z-index":9999,
+        "width": "100%",
+        "top":0,
+        "background-color":"white",
+        "box-shadow": "0px 4.5px 7.5px -1.5px rgba(0, 0, 0, 0.25)",
+      });
+      $(".body-content").css({
+        "margin-top":"100px",
+      })
+      $(".depart-part").css({
+        "top":"47px",
+        "position": "fixed",
+      });
+     }
+    else{
+      $(".drawer-menu").css({
+        "position":"static",
+        "z-index":1,
+        "width": "auto",
+        "background-color":"white",
+        "box-shadow": "none",
+      });
+      $(".body-content").css({
+        "margin-top":"0",
+      })
+      $(".depart-part").css({
+        "top":"223px",
+        "position": "absolute",
+      });
+    }
+  }
+  else{
+      $(".drawer-menu").css({
+        "position":"fixed",
+        "z-index":1,
+        "width": "300px",
+        "top":0,
+        "background-color":"rgb(0,0,0)",
+        "box-shadow": "none",
+      });
+      $(".body-content").css({
+        "margin-top":"0",
+      })
+      $(".depart-part").css({
+        "top":"223px",
+        "position": "absolute",
+      });
+  }
+});
