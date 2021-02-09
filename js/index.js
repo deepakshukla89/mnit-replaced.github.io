@@ -105,7 +105,8 @@ function bextContent(n) {
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
-  slides[bext - 1].style.display = "block";
+  slides[bext - 1].style.display = "flex";
+//   slides[bext - 1].style.display = "block";
 }
 
 function dextContent(n) {
